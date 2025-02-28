@@ -1,0 +1,602 @@
+HTML
+
+--------------------------------------------------------------------------------------------------------------------------------------
+HISTÓRIA
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Tornou-se popular no início dos anos 90, propósitos militares, troca de transferência de informações, surgiu nos EUA, guerra fria.
+
+O que é Web?
+WWW --> World Wide Web
+Tim Berners-Lee, compartilhamento de arquivos e informações acadêmicas.
+  
+Web (tecnologia) X Internet (rede)
+Web, é uma forma de acessar informações através da Internet. 
+Início dentro das universidades, páginas começaram a ser criadas (sites).
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+WEB - PROTOCOLO HTTP
+--------------------------------------------------------------------------------------------------------------------------------------
+O protocolo HTTP (Hypertext Transfer Protocol ou Protocolo de Transferência de Hipertexto) é a base da comunicação de dados na World 
+Wide Web (WWW).
+Modelo Cliente-Servidor:
+Opera em um modelo cliente-servidor. O cliente (geralmente um navegador) envia uma solicitação ao servidor, e o servidor responde 
+com os dados solicitados.
+
+Solicitações e Respostas:
+As solicitações HTTP incluem informações sobre o que o cliente deseja, como a URL da página web.
+As respostas HTTP contêm os dados solicitados (como o código HTML da página) e informações sobre o status da solicitação.
+
+Transferência de Dados:
+O HTTP é usado para transferir diversos tipos de dados, incluindo texto, imagens, vídeos e outros arquivos.
+Ele define como as mensagens são formatadas e transmitidas na internet, permitindo que navegadores e servidores web se comuniquem.
+
+Funcionamento:
+
+Transferência de Dados:
+O HTTP é usado para transferir diversos tipos de dados, incluindo texto, imagens, vídeos e outros arquivos.
+Principais Características:
+
+Sem Estado:
+O HTTP é um protocolo sem estado, o que significa que cada solicitação é tratada de forma independente. O servidor não armazena 
+informações sobre solicitações anteriores.
+Uso de URLs:
+O HTTP utiliza URLs (Uniform Resource Locators) para identificar recursos na web.
+
+
+HTTP vs. HTTPS:
+O HTTPS (Hypertext Transfer Protocol Secure) é uma versão segura do HTTP que utiliza criptografia para proteger a comunicação entre 
+o cliente e o servidor. Isso garante que os dados sejam transmitidos de forma segura, protegendo contra interceptação e adulteração.
+
+A Web utiliza esse protocolo de comunicação para receber informações das páginas.
+
+Ex. 
+Browser ---------> endereço http <enter> --------> request (requisição) ------------>computador(servidor)
+        <--------  response (resposta) <--------------------------------------------- devolve
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+O QUE É HTML
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Hyper Text Markup Language
+Criar página web. Texto simples. Conjunto de tags.
+Entidades que determinam padrões e conceitos de web: 
+IETF. https://www.ietf.org/
+W3C. www.w3c.org/ www.w3c.br/
+Versões 1,2,...até o 5
+
+Como funciona:
+
+Tags:
+O HTML usa "tags" para marcar os diferentes elementos de uma página. As tags são como instruções que dizem ao navegador como exibir o 
+conteúdo.
+Exemplo: <p> para parágrafos, 
+         <h1> para títulos, 
+         <img> para imagens.
+
+A maioria das tags vem em pares: uma tag de abertura (<p>) e uma tag de fechamento (</p>).
+ 
+
+Estrutura do documento:
+
+Um documento HTML tem uma estrutura básica:
+
+                    _______________________________<html>
+                   |
+                   |                 cabeçalho      <head>
+                   |                                  <title> Título do documento </title>
+                   |                                </head>
+      documento HTML     
+                   |
+                   |
+                   |                 corpo         <body>
+                   |                                 <p> Corpo do documento </p>
+                   |                               </body>
+                   |
+                   |______________________________</html>
+
+
+<!DOCTYPE html>: Declara a versão do HTML.
+<html>: A tag raiz que engloba todo o conteúdo.
+<head>: Contém informações sobre a página (título, metadados, etc.).
+<body>: Contém o conteúdo visível da página.
+
+Ex.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha primeira página</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Este é um parágrafo de exemplo.</p>
+    <img src="imagem.jpg" alt="Descrição da imagem">
+</body>
+</html>
+
+O HTML define a estrutura e o conteúdo de uma página da web. (O http envia uma requisição, o servidor recebe a requisição e 
+devolde a resposta para o browser, que tem uma tecnologia (interpretador) que lê e interpreta o conteúdo do texto html recebido 
+passando para linguagem de máquina e mostra o visual na tela). 
+Os navegadores interpretam o código HTML e exibem a página para o usuário.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+TAGS
+--------------------------------------------------------------------------------------------------------------------------------------
+
+É uma etiqueta que vc coloca em algo para identificá-lo ou classificá-lo.
+Descreve todo o conteúdo de uma página web.
+No HTML, as tags são usadas para marcar os elementos de uma página da web. 
+Elas dizem ao navegador como exibir o conteúdo.
+Símbolo: < e >. 
+Exemplo: <p> marca um parágrafo, <h1> marca um cabeçalho, <img> marca uma imagem.
+
+As tags geralmente vêm em pares: uma tag de abertura (<p>) e uma tag de fechamento (</p>).
+ 
+---------------------------------------------------------------------------------------------------------------------------------------
+AMBIENTE DE DESENVOLVIMENTO
+---------------------------------------------------------------------------------------------------------------------------------------
+Configurando o Ambiente:
+
+1. Use um editor de texto puro (bloco de notas - windows, gedit - Linux e Plain Text Editor - Mac). Instale um editor de código ou 
+escolha um editor e instale-o. VS Code ou Sublime Text.
+Para o curso a sugestão é instalar o Sublime Text (excolha o navegador
+2. Instale um navegador: Escolha um navegador e instale-o.
+3. Crie um arquivo HTML: Abra o editor de código e crie um novo arquivo com a extensão .html.
+4. Escreva o código HTML: Use as tags HTML para estruturar o conteúdo da página.
+5. Abra o arquivo no navegador: Clique com o botão direito no arquivo HTML e escolha a opção "Abrir com" o navegador.
+6. Use as ferramentas de desenvolvedor: Clique com o botão direito em qualquer elemento da página e escolha a opção "Inspecionar" para abrir 
+as ferramentas de desenvolvedor.
+
+Dicas:
+1. Comece com um editor de código simples e um navegador.
+2. Use as ferramentas de desenvolvedor para inspecionar e depurar o código.
+3. Explore as extensões do editor de código para adicionar funcionalidades extras.
+4. Use o Git para controlar as versões do seu código.
+
+. Editor de Código:
+
+Função: Escrever e editar o código HTML, CSS e JavaScript.
+
+Opções populares:
+
+Visual Studio Code (VS Code): Gratuito, poderoso, com muitas extensões para HTML. https://code.visualstudio.com/
+Sublime Text: Rápido e personalizável, com versão gratuita de avaliação. https://www.sublimetext.com/3
+Notepad++: Leve e gratuito, bom para iniciantes. https://notepad-plus-plus.org/
+Brackets: Focado em web design, com visualização ao vivo. https://github.com/adobe/brackets
+
+Navegador Web:
+Função: Visualizar e testar as páginas HTML.
+
+Opções populares:
+
+Google Chrome: Rápido, com ótimas ferramentas de desenvolvedor. https://www.google.com/chrome/
+Mozilla Firefox: Código aberto, com foco em privacidade. https://www.mozilla.org/en-US/firefox/new/
+Microsoft Edge: Integrado ao Windows, com bom desempenho. https://www.microsoft.com/en-us/edge
+
+Ferramentas de desenvolvedor:
+
+Inspecionar elementos: Ver o código HTML e CSS de qualquer elemento na página.
+Console JavaScript: Executar e depurar código JavaScript.
+Rede: Monitorar as requisições e respostas do navegador.
+
+Servidor Web (Opcional):
+
+Função: Simular um ambiente de servidor para testar páginas dinâmicas (com PHP, por exemplo).
+Opções populares:
+XAMPP: Pacote completo com Apache, MySQL e PHP. https://www.apachefriends.org/download.html
+WampServer: Similar ao XAMPP, para Windows. https://sourceforge.net/projects/wamp-server/
+
+Live Server (Extensão do VS Code): Simples e rápido para desenvolvimento local. 
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer1   
+
+Outras Ferramentas Úteis:
+
+Gerenciador de pacotes (npm ou Yarn): Instalar e gerenciar bibliotecas JavaScript. https://docs.npmjs.com/
+Git: Controle de versão para acompanhar as alterações no código. https://git-scm.com/
+Ferramentas de design (Adobe XD, Figma): Criar layouts e protótipos visuais. https://www.figma.com/resource-library/ui-design/
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+PRIMEIRO EXEMPLO HTML
+---------------------------------------------------------------------------------------------------------------------------------------
+Crie uma pasta html-basico dentro da pasta curso-html
+Crie um novo arquivo dentro da pasta html-basico chamada 01-ola-mundo.html
+Em um editor de texto (vs code) abra o arquivo 01-ola-mundo.html e escreva: olá mundo! 
+Salvar o arquivo
+
+No windows, na pasta criada html-basico, abra o arquivo 01-ola-mundo. 
+Automativamente, abrirá uma um site no navegador mostrando o conteúdo de 01-ola-mundo.html, que é Olá mundo!.
+
+A razão pela qual você vê apenas "Olá Mundo" no navegador, sem a estrutura HTML completa, é que o browser (navegadores) são projetados 
+para serem tolerantes e tentam exibir o conteúdo da melhor forma possível, mesmo que o código HTML esteja incompleto ou incorreto. 
+Eles implicitamente criam a estrutura básica de HTML necessária para exibir o texto, mesmo que você não a tenha escrito explicitamente.
+
+Como não temos um domínio, um site, o browser usa o caminho da máquina local ' file:///C:/usr/curso/curso-html/html-basico/01-ola-mundo.html'
+
+Como iniciar a estrutura HTML:
+
+1 <html>                                    --> primeira tag:abrir
+2     <head></head>                         --> cabeçalho, serve para título, quem está desenvovlendo e outras informações, ect.
+3	<body></body>                       --> corpo do documento, para escrever o conteúdo da página. ex. Olá mundo!
+4   </html>                                 -->fechamento, algumas tags não precisam de fechamento, mas a maioria precisa.
+
+
+Ex. 
+<html>
+    <head>
+        <title>Título da página</title>     --> tag filha do Head(tag pai)
+        <meta charset="UTF-8">              --> # erro interpretação caracteres acentuados
+    </head>  
+    <body>
+        Olá mundo!
+	Teste 1,2,3
+    </body>
+</html>
+
+
+# Erro: Certifique-se de que o arquivo HTML esteja salvo com a codificação UTF-8, caso não esteja tem que acrescentar esta linha de 
+comando. 
+Senão, o navegador Chrome está interpretando os caracteres acentuados (como "í" e "á") de forma incorreta, resultando em "TÃtulo" 
+e "OlÃ¡".
+
+A codificação padrão do seu arquivo HTML não está definida corretamente para UTF-8, que é a codificação recomendada para exibir 
+caracteres acentuados corretamente. A maioria dos editores de código (como o VS Code) permite escolher a codificação ao salvar o 
+arquivo.
+
+<meta charset="UTF-8">   --> informa ao navegador que o conteúdo da página está codificado em UTF-8.
+O UTF-8 é uma codificação de caracteres que suporta uma ampla variedade de caracteres, incluindo caracteres acentuados e outros símbolos 
+especiais. Ao adicionar a tag <meta charset="UTF-8"> e garantir que o arquivo esteja salvo com a codificação UTF-8, o navegador Chrome 
+exibirá os caracteres acentuados corretamente.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+PARÁGRAFOS
+---------------------------------------------------------------------------------------------------------------------------------------
+
+um parágrafo é definido pela tag <p>. Essa tag é usada para agrupar blocos de texto e formatá-los como parágrafos.
+
+<html>
+    <head>
+        <title>Título da página</title>
+        <meta charset="UTF-8">
+    </head>  
+    <body>
+        <p>Olá mundo!</p>                      --> <p></p> (tag parágrafo)
+        <p>Teste 1,2,3</p>
+        <p>Verificando teste</p>
+    </body>
+</html>
+
+
+Recursos e Atributos:
+
+Atributos Globais: A tag <p> suporta atributos globais como class, id, style e outros, que podem ser usados para aplicar estilos CSS ou 
+adicionar funcionalidades JavaScript. Ex. fazer com que o texto fique justificado na página (estilo CSS)
+Estilização com CSS: Você pode usar CSS para personalizar a aparência dos parágrafos, como alterar a fonte, o tamanho do texto, a cor, 
+o alinhamento e o espaçamento.
+
+MDN Web Docs - p element  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+w3schools - html paragraphs
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+TÍTULOS
+---------------------------------------------------------------------------------------------------------------------------------------
+Tags para mostrar Títulos na página começam com H:
+
+<h1></h1>                --> Título negrito com fonte grande, é o maior que se pode declarar dentro de um document HTML
+_______________________________________________________________________________________________________________________
+
+<h1>Título da página</h1>
+
+html>
+    <head>
+        <title>Título da página</title>
+        <meta charset="UTF-8">
+    </head>  
+    <body>
+        <h1>Título da Página</h1>                   --> Título negrito com fonte grande 
+        <p>Olá mundo!</p>
+        <p>Teste 1,2,3</p>
+        <p>Verificando teste</p>
+        <p>
+            Quando falhamos em identificar adequadamente as fontes de informação,
+            podemos ter, como consequência, usuários esquecidos e, portanto, não ouvidos,
+            ou requisitos que surgem quando a entrega do produto está sendo realizada.
+            Portanto, quanto melhor for a nossa capacidade de envolver todas as fontes,
+            maior será a chance de sucesso do projeto.
+        </p>        
+    </body>
+</html>
+
+<h2></h2>                --> Título negrito com fonte menor que a <h1>
+________________________________________________________________________________________________________________________
+
+<html>
+    <head>
+        <title>Título da página</title>
+        <meta charset="UTF-8">
+    </head>  
+    <body>
+        <h1>Título da Página</h1>
+        <p>Olá mundo!</p>
+        <p>Teste 1,2,3</p>
+        <p>Verificando teste</p>
+        <h2>Seção 1</h2>                     -->Título negrito com fonte menor que a <h1>
+        <p>
+            Quando falhamos em identificar adequadamente as fontes de informação,
+            podemos ter, como consequência, usuários esquecidos e, portanto, não ouvidos,
+            ou requisitos que surgem quando a entrega do produto está sendo realizada.
+            Portanto, quanto melhor for a nossa capacidade de envolver todas as fontes,
+            maior será a chance de sucesso do projeto.
+        </p>       
+    </body>
+</html>
+
+<h3.</h3>                         --> Título menor ainda e assim sucessivamente
+________________________________________________________________________________________________________________________
+
+<html>
+    <head>
+        <title>Título da página</title>
+        <meta charset="UTF-8">
+    </head>  
+    <body>
+        <h1>Título da Página</h1>
+        <p>Olá mundo!</p>
+        <p>Teste 1,2,3</p>
+        <p>Verificando teste</p>
+        <h2>Seção 1</h2>
+        <p>
+            Quando falhamos em identificar adequadamente as fontes de informação,
+            podemos ter, como consequência, usuários esquecidos e, portanto, não ouvidos,
+            ou requisitos que surgem quando a entrega do produto está sendo realizada.
+            Portanto, quanto melhor for a nossa capacidade de envolver todas as fontes,
+            maior será a chance de sucesso do projeto.
+        </p>
+        <h3>Seção 1.1</h3>                                           ----> Título menor ainda e assim sucessivamente
+        <p>
+            Para descobrir quais são as fontes de informação dos requisitos, um bom
+            começo é conversar com o patrocinador do projeto para que ele identifique as
+            áreas de negócios que terão alguma interface com o negócio que está sendo
+            tratado pelo software, bem como identifique possíveis leis ou regulamentações que precisam ser atendidas. 
+        </p>
+    </body>
+</html>
+
+
+Tamanhos decrescentes:
+__________________________________________________________________________________________________________________________
+<h4>Seção 1.1.1</h4>
+<h5>Seção 1.1.1</h5>
+<h6>Seção 1.1.1</h6>
+
+<html>
+    <head>
+        <title>Título da página</title>
+        <meta charset="UTF-8">
+    </head>  
+    <body>
+        <h1>Título da Página</h1>
+        <p>Olá mundo!</p>
+        <p>Teste 1,2,3</p>
+        <p>Verificando teste</p>
+        <h2>Seção 1</h2>
+        <p>
+            Quando falhamos em identificar adequadamente as fontes de informação,
+            podemos ter, como consequência, usuários esquecidos e, portanto, não ouvidos,
+            ou requisitos que surgem quando a entrega do produto está sendo realizada.
+            Portanto, quanto melhor for a nossa capacidade de envolver todas as fontes,
+            maior será a chance de sucesso do projeto.
+        </p>
+        <h3>Seção 1.1</h3>
+        <p>
+            Para descobrir quais são as fontes de informação dos requisitos, um bom
+            começo é conversar com o patrocinador do projeto para que ele identifique as
+            áreas de negócios que terão alguma interface com o negócio que está sendo
+            tratado pelo software, bem como identifique possíveis leis ou regulamentações que precisam ser atendidas. 
+        </p>
+        <h4>Seção 1.1.1</h4>
+        <h5>Seção 1.1.1</h5>                        --> tamanhos menores dos títulos
+        <h6>Seção 1.1.1</h6>
+    </body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+CENTRALIZAÇÃO E QUEBRA DE LINHA (nova linha)
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Centralizar: usar a tag <h1></h1> dentro de uma outra tag chemada <center></center>.
+
+Ex. 
+
+<center>
+	<h1>
+	Título da Página
+	</h1>
+</centrer>
+
+1. Centralizar Texto:
+
+Usando CSS text-align: center;:
+
+Esta é a maneira mais comum e recomendada para centralizar texto dentro de um elemento.
+Você pode aplicar essa propriedade a elementos como <p>, <h1>, <div>, etc.
+
+<div style="text-align: center;">
+  Este texto está centralizado.
+</div>
+
+<p style="text-align: center;">
+  Este parágrafo também está centralizado.
+</p>
+
+
+2. Centralizar Elementos em Bloco (como divs):
+
+Usando CSS margin: 0 auto;:
+Esta técnica é usada para centralizar elementos em bloco horizontalmente dentro de seu contêiner.
+O elemento precisa ter uma largura definida para que a centralização funcione.
+HTML
+
+<div style="width: 300px; margin: 0 auto;">
+  Este div está centralizado horizontalmente.
+</div>
+Usando CSS Flexbox:
+Flexbox é um layout poderoso que facilita a centralização de elementos tanto horizontalmente quanto verticalmente.
+HTML
+
+<div style="display: flex; justify-content: center;">
+  Este div está centralizado usando flexbox.
+</div>
+
+Observações:
+
+É altamente recomendado usar CSS para centralizar elementos em vez de atributos HTML obsoletos como <center>.
+A escolha da técnica de centralização depende do tipo de elemento e do layout desejado.
+
+# Não precisa colocar a tag <center> em cada título ou parágrafo que se quer centralizar. Podemos colocar para 
+um grupo ou para o conteúdo todo a tag <center></center>, seja o título ou o parágrafo.
+
+
+Quebra de Linha:
+
+Para colocar parte de um parágrafo em uma nova linha (quebra de linha),ou parte do texto em uma nova linha, 
+coloca-se uma tag dentro do parágrafo.
+
+Essa tag insere uma quebra de linha em um texto, movendo o conteúdo subsequente para a próxima linha.
+
+Uso básico:
+
+A tag <br> é uma tag de fechamento automático, o que significa que não requer uma tag de fechamento 
+correspondente (</br>). Basta inserir <br> no local onde você deseja que a quebra de linha ocorra.
+Quando usar <br>:
+
+A tag <br> é mais adequada para quebras de linha dentro de um parágrafo ou para criar pequenas quebras de 
+linha em um texto.
+
+Quando usar <p>:
+
+A tag <p> é mais adequada para separar blocos de texto em parágrafos distintos.
+
+Quando usar <pre>:
+
+A tag <pre> é mais adequada para exibir texto pré-formatado, como código ou texto com formatação específica.
+
+Outras formas de quebra de linha:
+
+Parágrafos (<p>): A tag <p> cria um novo parágrafo, que também resulta em uma quebra de linha. No entanto, 
+a diferença é que os parágrafos também adicionam um espaço vertical entre eles.
+Pré-formatação (<pre>): A tag <pre> preserva a formatação do texto, incluindo quebras de linha e espaços em 
+branco. Isso é útil para exibir código ou texto que precisa manter sua formatação original.
+CSS: A propriedade CSS white-space pode ser usada para controlar como os espaços em branco e as quebras de 
+linha são tratados. Por exemplo, white-space: pre-line; preserva as quebras de linha, mas não os espaços
+em branco.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+LISTAS
+---------------------------------------------------------------------------------------------------------------------------------------
+
+As tags de lista mostram uma marcação para cada item que for sendo acrescentado. Abre uma tag <ul></ul>, porém dentro de uma tag <ul>
+tem que conter uma outra tag <li>.
+
+
+Listas não ordenadas (<ul>)
+
+São usadas para exibir itens sem uma sequência específica. Os itens são marcados com marcadores (geralmente pontos).
+
+Tags:
+<ul>: Define o início de uma lista não ordenada.
+<li>: Define um item da lista.
+Exemplo:
+<!-- end list -->
+
+HTML
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+
+Listas Ordenadas (<ol>)
+
+Listas ordenadas são usadas para exibir itens em uma sequência específica. Os itens são numerados automaticamente.
+
+Tags:
+<ol>: Define o início de uma lista ordenada.
+<li>: Define um item da lista.
+Exemplo:
+<!-- end list -->
+
+HTML
+
+<ol>
+  <li>Primeiro item</li>
+  <li>Segundo item</li>
+  <li>Terceiro item</li>
+</ol>
+
+
+Listas de Definição (<dl>)
+
+Listas de definição são usadas para exibir termos e suas definições.
+
+Tags:
+<dl>: Define o início de uma lista de definição.
+<dt>: Define o termo a ser definido.
+<dd>: Define a descrição do termo.
+Exemplo:
+<!-- end list -->
+
+HTML
+
+<dl>
+  <dt>HTML</dt>
+  <dd>Linguagem de marcação para criação de páginas web.</dd>
+  <dt>CSS</dt>
+  <dd>Linguagem de estilo para design de páginas web.</dd>
+</dl>
+
+Atributos e Estilização
+
+Atributos:
+Para listas ordenadas, o atributo type pode ser usado para alterar o tipo de numeração (por exemplo, type="A" para 
+letras maiúsculas).
+Estilização com CSS:
+Você pode usar CSS para personalizar a aparência das listas, como alterar os marcadores, o espaçamento, as cores e 
+muito mais.
+Aninhamento de Listas
+
+Você pode aninhar listas umas dentro das outras para criar estruturas mais complexas.
+
+Exemplo de Lista Aninhada:
+
+HTML
+
+<ul>
+  <li>Item principal 1
+    <ul>
+      <li>Subitem 1.1</li>
+      <li>Subitem 1.2</li>
+    </ul>
+  </li>
+  <li>Item principal 2</li>
+</ul>
+
+
+Recursos Adicionais
+
+Listas em HTML - MDN Web Docs
+Listas HTML - W3Schools
+
+
+
+
+
+
