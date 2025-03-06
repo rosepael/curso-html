@@ -253,6 +253,12 @@ exibirá os caracteres acentuados corretamente.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
+COMENTÁRIOS
+---------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- e -->
+
+---------------------------------------------------------------------------------------------------------------------------------------
 PARÁGRAFOS
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -503,6 +509,9 @@ LISTAS
 
 As tags de lista mostram uma marcação para cada item que for sendo acrescentado. Abre uma tag <ul></ul>, porém dentro de uma tag <ul>
 tem que conter uma outra tag <li>.
+<ul>
+    <li></li>
+</ul>
 
 
 Listas não ordenadas (<ul>)
@@ -532,7 +541,7 @@ Tags:
 <ol>: Define o início de uma lista ordenada.
 <li>: Define um item da lista.
 Exemplo:
-<!-- end list -->
+<!-- end list --> (comentário no HTML)
 
 HTML
 
@@ -552,7 +561,7 @@ Tags:
 <dt>: Define o termo a ser definido.
 <dd>: Define a descrição do termo.
 Exemplo:
-<!-- end list -->
+<!-- end list --> (comentário no HTML)
 
 HTML
 
@@ -594,6 +603,31 @@ Recursos Adicionais
 
 Listas em HTML - MDN Web Docs
 Listas HTML - W3Schools
+
+Ex:
+<html>
+    <head>
+
+        <title>Título da página</title>
+        <meta charset="UTF-8">
+    </head>  
+    <body>
+        <h1>Título lista</h1>
+       <ul> <!--"unordered list" (lista não ordenada). Os itens da lista são marcados com marcadores (bolinhas, quadrados, etc.) por padrão. -->
+            <li>
+                <p>
+                    Esta tag define o início e o fim da lista não ordenada.
+                    Todos os itens da lista devem estar dentro dessas tags.
+                </p>
+            </li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+       </ul>             
+	</body>
+</html>
+
 
 
 
